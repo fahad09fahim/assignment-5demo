@@ -48,16 +48,19 @@
                       alt="..."
                     />
                     <div class="card-body bg-black">
-                      <h5 id="playerName-1" class="card-title fs-3 text-white text-center">
+                      <h5
+                        id="playerName-1"
+                        class="card-title fs-3 text-white text-center"
+                      >
                         Robert Lewandowski
                       </h5>
                       <p class="card-text fs-6 text-white text-center">
                         Goal: 15 <span class="ps-4">Ratting: 9</span>
                       </p>
                       <div class="d-flex justify-content-center">
-                        <button 
+                        <button
                           id="player-1"
-                          class="select-button btn btn-primary px-lg-5 fs-5 "
+                          class="select-button btn btn-primary px-lg-5 fs-5"
                         >
                           SELECT
                         </button>
@@ -74,7 +77,10 @@
                       alt="..."
                     />
                     <div class="card-body bg-black">
-                      <h5 id="playerName-2" class="card-title fs-3 text-white text-center">
+                      <h5
+                        id="playerName-2"
+                        class="card-title fs-3 text-white text-center"
+                      >
                         Ansu Fati
                       </h5>
                       <p class="card-text fs-6 text-white text-center">
@@ -100,7 +106,10 @@
                       alt="..."
                     />
                     <div class="card-body bg-black">
-                      <h5 id="playerName-3" class="card-title fs-3 text-white text-center">
+                      <h5
+                        id="playerName-3"
+                        class="card-title fs-3 text-white text-center"
+                      >
                         Ousmane Dembélé
                       </h5>
                       <p class="card-text fs-6 text-white text-center">
@@ -108,7 +117,7 @@
                       </p>
                       <div class="d-flex justify-content-center">
                         <button
-                         id="player-3"
+                          id="player-3"
                           class="select-button btn btn-primary px-lg-5 fs-5"
                         >
                           SELECT
@@ -126,7 +135,10 @@
                       alt="..."
                     />
                     <div class="card-body bg-black">
-                      <h5 id="playerName-4" class="card-title fs-3 text-white text-center">
+                      <h5
+                        id="playerName-4"
+                        class="card-title fs-3 text-white text-center"
+                      >
                         Raphinha
                       </h5>
                       <p class="card-text fs-6 text-white text-center">
@@ -152,7 +164,10 @@
                       alt="..."
                     />
                     <div class="card-body bg-black">
-                      <h5 id="playerName-5" class="card-title fs-3 text-white text-center">
+                      <h5
+                        id="playerName-5"
+                        class="card-title fs-3 text-white text-center"
+                      >
                         Gerard Piqué
                       </h5>
                       <p class="card-text fs-6 text-white text-center">
@@ -160,7 +175,7 @@
                       </p>
                       <div class="d-flex justify-content-center">
                         <button
-                         id="player-5"
+                          id="player-5"
                           class="select-button btn btn-primary px-lg-5 fs-5"
                         >
                           SELECT
@@ -178,7 +193,10 @@
                       alt="..."
                     />
                     <div class="card-body bg-black">
-                      <h5 id="playerName-6" class="card-title fs-3 text-white text-center">
+                      <h5
+                        id="playerName-6"
+                        class="card-title fs-3 text-white text-center"
+                      >
                         Pedri
                       </h5>
                       <p class="card-text fs-6 text-white text-center">
@@ -186,7 +204,7 @@
                       </p>
                       <div class="d-flex justify-content-center">
                         <button
-                         id="player-6"
+                          id="player-6"
                           class="select-button btn btn-primary px-lg-5 fs-5"
                         >
                           SELECT
@@ -221,21 +239,23 @@
                   <div class="d-inline-flex">
                     <p class="text-white fs-5 pe-4">Per Player</p>
                     <input
-                      id="per-player-budget"
+                      id="playerBudget-input"
                       class="w-50 h-75 bg-dark text-white border-3"
                       type="text"
                       name=""
                     />
                   </div>
-                  <button id="calculate-btn" class="btn btn-primary p-2 my-2">
+                  <button id="playerBudget-btn" class="btn btn-primary p-2 my-2">
                     Calculate
                   </button>
-                  <p class="text-white fs-5 pe-6">
-                    Player Expenses $<span>00</span>
+                  <p 
+                  class="text-white fs-5 pe-6">
+                    Player Expenses $<span id="playerExpenses-field">00</span>
                   </p>
                   <div class="d-inline-flex">
                     <p class="text-white fs-5 pe-4">Manager</p>
                     <input
+                      id="managerInput"
                       class="w-50 h-75 bg-dark text-white border-3"
                       type="text"
                       name=""
@@ -244,17 +264,20 @@
                   <div class="d-inline-flex">
                     <p class="text-white fs-5 pe-5">Coach</p>
                     <input
+                      id="coachInput"
                       class="w-50 h-75 bg-dark text-white border-3"
                       type="text"
                       name=""
                     />
                   </div>
-                  <button class="btn btn-primary p-2 my-2">
+                  <button
+                   id="totalCost-btn"
+                  class="btn btn-primary p-2 my-2">
                     Calculate Total
                   </button>
                   <div class="d-inline-flex">
                     <p class="text-white fs-5 pe-6">Total Cost</p>
-                    <p class="text-white fs-5 ps-5">$<span>00</span></p>
+                    <p  class="text-white fs-5 ps-5">$<span id="totalCost-field">00</span></p>
                   </div>
                 </div>
               </div>
@@ -280,6 +303,6 @@
     ></script>
 
     <script src="Js/Select.js"></script>
-    <script src="js/budget.js"></script>
+    <script src="Js/calculation.js"></script>
   </body>
 </html>
